@@ -7,14 +7,12 @@
 
 		{% seo %}
 		{% feed_meta %}
+    {% include analytics.html %}
 
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    {% if jekyll.environment == 'production' and site.google_analytics_id %}
-    {% include analytics.html %}
-    {% endif %}
 	</head>
 	<body>
 		<header>
